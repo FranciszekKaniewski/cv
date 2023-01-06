@@ -4,15 +4,18 @@ import SkillsListElement from '../Coponents/SkillsListElement'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMailBulk, faPhone, faLocation } from '@fortawesome/free-solid-svg-icons'
 
+import Avatar from '../Assets/avatar.png'
+
 function NamePage() {
 
     const SkillsList = 
     [
-        {name:'Css',progress:100,color:'#42a5f5',},
+        {name:'HTML/Css',progress:100,color:'#42a5f5',},
         {name:'React.js',progress:80,color:'#5ed3f3',},
         {name:'JavaScript',progress:80,color:'#efd81d',},
         {name:'Node.js',progress:40,color:'#7fc728',},
         {name:'MongoDB',progress:20,color:'#439743',},
+        {name:'Figma',progress:40,color:'#af8fcf',},
         {name:'GitHub',progress:20,color:'#2d333b',},
         {name:'C++',progress:20,color:'#6295cb',},
         {name:'SQL',progress:20,color:'#dc7435',},
@@ -50,7 +53,26 @@ function NamePage() {
         </div>
 
         <div className="right">
-        
+            <img src={Avatar} alt="" className="avatar" />
+            
+            <h5>&lt;Cechy
+                <ul>
+                    <li>Opanowanie</li>
+                    <li>Chęć nauki</li>
+                    <li>Zdolność szybkiej nauki</li>
+                    <li>Zdolność adaptacji</li>
+                </ul>
+                <span>/&gt;</span>
+            </h5>
+            <h5>&lt;Zainteresowania
+                <ul>
+                    <li>Opanowanie</li>
+                    <li>Chęć nauki</li>
+                    <li>Zdolność szybkiej nauki</li>
+                    <li>Zdolność adaptacji</li>
+                </ul>
+                <span>/&gt;</span>
+            </h5>
         </div>
 
     </div>

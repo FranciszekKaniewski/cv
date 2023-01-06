@@ -24,18 +24,26 @@ h5{
     transition: .4s
 }
 
+
 .sample-page>.left>.skills{
     flex-basis: 100%;
     text-align: center;
     font-size: 1.2em;
+    margin-bottom: 40px;
 }
 .sample-page>.left>.skills>ul{
     list-style-type: none;
 }
+.left{
+    margin-top: 50px;
+}
+.left>h5{
+    margin: 20px 100px;
+}
 .progres-bar{
     width: 50%;
     height: 22px;
-    margin: 0.5vh auto;
+    margin: 7.5px auto;
     background-color: rgba(170, 153, 170, 0);
     border-radius: 10px;
     position: relative;
@@ -50,6 +58,40 @@ h5{
     z-index: -1;
     border-radius: 10px;
 }
+.right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 50px;
+}
+.right>h5{
+    position: absolute;
+    margin: 0;
+    font-size: 1.5em;
+    background-color: #aaa;
+    border-radius: 20px;
+    padding: 20px;
+    top: 450px;
+    left: 5vw;
+}
+.right>h5:nth-child(2){
+    top: 670px;
+    left: auto;
+    right: 5vw;
+}
+.right>.avatar{
+    display: block;
+    /* width: 100%; */
+    margin-top: 0vh;
+    height: 900px;
+    margin: 0 100vw;
+}
+.right>h5>ul{
+    list-style-type: none;
+    font-size: .8em;
+}
+
 
 .sample-page{
     flex-basis: 100%;
@@ -82,13 +124,23 @@ h5{
     background-color: #a5a;
 }
 
+
 .scroll-bar{
     text-align: center;
     font-size: 50px;
     position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 10vh;
-    background-color: #aaa;
+    left: 30%;
+    right: 30%;
+    border-radius: 100px;
+    bottom: 40px;
+    height: 5vh;
+    /* background-color: rgba(252, 227, 0, 0.534); */
+    display: flex;
+}
+.scroll-bar>span{
+    cursor: pointer;
+    flex-basis: 100%;
+    height: 10px;
+    line-height: 5vh;
+    font-size: 40px;
 }
