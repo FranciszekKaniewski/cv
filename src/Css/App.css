@@ -1,0 +1,34 @@
+html,body{
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.App{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 500vw;
+    margin: 0;
+    right: 0;
+    transition: .4s;
+}
+
+.main-page{
+    flex-basis: 100%;
+    width: 100vh;
+    height: 10px;
+    position: relative;
+}
+
+.scroll-bar{
+    text-align: right;
+    font-size: 50px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10vh;
+    background-color: #aaa;
+}
