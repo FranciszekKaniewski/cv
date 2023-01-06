@@ -12,8 +12,13 @@ function ScrollBar({procent, setProcent}) {
 
   return (
     <div className='scroll-bar'>
-      <span onClick={(e)=> moveLeft()}>&lt;== </span>
-      <span onClick={(e)=> moveRight()}>==&gt;</span> 	
+      <span onClick={(e)=> moveLeft()}>&lt; </span>
+      <span>- </span>
+      <span>- </span>
+      <span>- </span>
+      <span>- </span>
+      <span>- </span>
+      <span onClick={(e)=> moveRight()}>&gt;</span> 	
     </div>
   )
 }

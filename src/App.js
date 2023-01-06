@@ -1,27 +1,33 @@
 import './Css/App.css';
-import MainPage from './Pages/MainPage.jsx';
+import SamplePage from './Pages/SamplePage.jsx';
 import ScrollBar from './Coponents/ScrollBar';
 
 import React ,{ useState } from 'react';
+import NamePage from './Pages/NamePage';
 
 function App() {
   
   const [procent, setProcent] = useState(0)
 
-  const PagesInfo = [
-    {title:'Name',},
-    {title:'School',},
-    {title:'Courses',},
-    {title:'Experience',},
-    {title:'Activities',},
+  const SamplePagesInfo = [
+    {title:'Wykształcenie',dc:'Franciszek Kaniewski',},
+    {title:'Courses',dc:'Franciszek Kaniewski',},
+    {title:'Experience',dc:'Franciszek Kaniewski',},
+    {title:'Activities',dc:'Franciszek Kaniewski',},
   ]
 
-  const Pages = PagesInfo.map(page=>(<MainPage title={page.title}/>))
+  const SamplePages = SamplePagesInfo.map(page=>(
+    <SamplePage 
+      key={page.title} 
+      title={page.title}
+      dc={page.dc}/>
+  ))
 
   return (
     <div className="App" style={{right: `${procent}%`}}>
 
-      {Pages}
+      <NamePage />
+      {SamplePages}
 
       <ScrollBar procent={procent} setProcent={setProcent}/>
 
