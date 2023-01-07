@@ -1,17 +1,38 @@
+:root {
+    --white: #ffffff;
+    --main: #434981;
+    --gray: #8a8a8a;
+    --dark: #2c2c2c;
+  }
 html,body{
+    z-index: -1;
     margin: 0;
     position: relative;
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: Arial, sans-serif;
+    
 }
 h1{
+    color: var(--main);
     font-size: 3.5em;
     text-align: center;
 }
+h3{
+    margin-top: 0;
+}
+h4{
+    color: var(--dark);
+}
 h5{
+    color: var(--dark);
     font-size: 1em;
 }
+p{
+    color: var(--gray);
+}
+
+/* ==========App========== */
 
 .App{
     position: relative;
@@ -22,88 +43,6 @@ h5{
     right: 0;
     transition: .4s
 }
-
-.name-page>.left>.skills{
-    text-align: center;
-    font-size: 1.2em;
-}
-.name-page>.left>.skills>ul{
-    list-style-type: none;
-}
-.left{
-    display: flex;
-    height: 100%;
-    flex-basis: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.left>h5{
-    margin: 20px 20px;
-}
-.progres-bar{
-    width: 50%;
-    height: 22px;
-    margin: 7.5px auto;
-    background-color: rgba(170, 153, 170, 0);
-    border-radius: 10px;
-    position: relative;
-    border: 1px solid black;
-}
-.progres-bar>.bgc{
-    position: absolute;
-    background-color: #aaa;
-    height: 100%;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    border-radius: 10px;
-}
-.right{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    position: relative;
-    flex-direction: column;
-}
-.right>h5{
-    position: absolute;
-    margin: 0;
-    font-size: 1.5em;
-    background-color: #aaa;
-    border-radius: 20px;
-    padding: 20px;
-    top: 470px;
-    left: 5vw;
-}
-.right>h5:nth-child(2){
-    top: 700px;
-    left: auto;
-    right: 5vw;
-}
-.right>.avatar{
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 900px;
-}
-.right>h5>ul{
-    list-style-type: none;
-    font-size: .8em;
-}
-.name-page>.right{
-    flex-direction: column;
-}
-.name-page>.left>.contact{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 10vw;
-}
-.name-page>.left>.contact>h5{
-    margin: 20px;
-}
-
 
 .sample-page,.name-page{
     flex-basis: 100%;
@@ -116,17 +55,104 @@ h5{
 .sample-page:nth-child(even){
     flex-direction: row-reverse;
 }
-.sample-page>.left,.sample-page>.right,.name-page>.left,.name-page>.right{
+.left,.right{
     flex-basis: 100%;
     height: 100vh;
     width: 50%;
     float: left;
-}
-.sample-page>.left>h1{
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+
+/* ==========Left */
+
+.left{
+    justify-content: space-around;
+}
+.left>h5{
+    margin: 20px 20px;
+}
+
+/* =========Right========== */
+
+.right{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+/* ==========NamePage========== */
+
+
+.name-page>.right>.avatar{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    min-height: 600px;
+}
+.name-page>.left>.skills{
+    text-align: center;
+    font-size: 1.2em;
+    flex-grow: 1;
+}
+.name-page>.left>.skills>ul{
+    list-style-type: none;
+}
+.name-page>.left>.contact{
+    flex-basis: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.name-page>.left>.contact>h5{
+    margin: 20px;
+}
+
+.name-page>.right>h5{
+    position: absolute;
+    margin: 0;
+    font-size: 1.5em;
+    background-color: var(--gray);
+    border-radius: 20px;
+    padding: 20px;
+    top: 470px;
+    left: 5vw;
+}
+.name-page>.right>h5:nth-child(2){
+    top: 700px;
+    left: auto;
+    right: 5vw;
+}
+.name-page>.right>h5>ul{
+    list-style-type: none;
+    font-size: .8em;
+}
+
+.skills>ul>li{
+    color: var(--dark);
+}
+.progres-bar{
+    width: 50%;
+    height: 22px;
+    margin: 7.5px auto;
+    background-color: rgba(170, 153, 170, 0);
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid var(--gray);
+}
+.progres-bar>.bgc{
+    position: absolute;
+    background: linear-gradient(90deg, #fff 0%, #f00 100%);
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+/* ==========SamplePage========== */
 
 .samplepage-desc{
     text-align: center;
@@ -134,20 +160,9 @@ h5{
     font-size: 1.35em;
     font-weight: 100;
 }
-.samplepage-desc>h3{
-    margin-top: 0;
-}
-.name-page>h1{
-    flex-basis: 100%;
-}
-.left:nth-child(0){
-    flex-direction: row;
-}
-
 
 .school-png{
     width: 100%;
-    /* max-height: 900px; */
 }
 
 
@@ -157,23 +172,19 @@ h5{
     margin: 0 100px;
 }
 
+/* ==========ScrollBar========== */
 
 .scroll-bar{
     text-align: center;
-    font-size: 50px;
     position: fixed;
     left: 30%;
     right: 30%;
-    border-radius: 100px;
     bottom: 40px;
-    height: 5vh;
-    /* background-color: rgba(252, 227, 0, 0.534); */
     display: flex;
 }
 .scroll-bar>span{
     cursor: pointer;
     flex-basis: 100%;
-    /* height: 10px; */
     line-height: 5vh;
     font-size: 40px;
     transition: .4s;

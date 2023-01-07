@@ -6,7 +6,7 @@ import { faUser, faSchool, faComputer, faHandshakeAlt, faUsers, faAngleLeft, faA
 
 function ScrollBar({procent, setProcent}) {
 
-  let buttonStyle={color:'orange'}
+  let buttonStyle={color:'var(--main)'}
 
   const moveLeft =()=>{
     if(procent > 0) setProcent(procent - 100)
@@ -28,7 +28,7 @@ function ScrollBar({procent, setProcent}) {
       <span style={procent === 200 ? buttonStyle : null}onClick={()=> moveTo(200)}> <FontAwesomeIcon icon={faComputer} /> </span>
       <span style={procent === 300 ? buttonStyle : null}onClick={()=> moveTo(300)}> <FontAwesomeIcon icon={faHandshakeAlt} /> </span>
       <span style={procent === 400 ? buttonStyle : null}onClick={()=> moveTo(400)}> <FontAwesomeIcon icon={faUsers} /> </span>
-      <span style={procent === 400 ? {rotate:'90deg'}: null} onClick={()=> moveRight()}><FontAwesomeIcon icon={faAngleRight}/></span>
+      <span style={procent === 400 ? {rotate:'90deg', color:'var(--main)'}: null} onClick={()=> moveRight()}><FontAwesomeIcon icon={faAngleRight}/></span>
     </div>
   )
 }

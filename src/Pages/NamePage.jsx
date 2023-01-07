@@ -37,16 +37,16 @@ function NamePage() {
 
         <h1>Franciszek Kaniewski</h1>
 
+        <div className="contact">
+        <h5><FontAwesomeIcon icon={faMailBulk} /> fkaniewski.web@gmail.com</h5>
+        <h5><FontAwesomeIcon icon={faLocation} />Strzelecka 9, 9-400 Płock</h5>
+        <h5><FontAwesomeIcon icon={faPhone} /> +48 604 947 826</h5>
+        </div>
+
         <div className="skills">
             <ul>
                 {Skills}
             </ul>
-        </div>
-
-        <div className="contact">
-        <h5><FontAwesomeIcon icon={faMailBulk} /> fkaniewski.web@gmail.com</h5>
-        <h5><FontAwesomeIcon icon={faPhone} /> +48 604 947 826</h5>
-        <h5><FontAwesomeIcon icon={faLocation} />Strzelecka 9, 9-400 Płock</h5>
         </div>
 
         </div>
