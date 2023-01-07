@@ -21,6 +21,7 @@ function App() {
     dc:
       <Dc 
         content= {<>
+          <p className="date">9.2019 - 4.2023</p>
           <h3>Technik Informatyk</h3>
           <h4>Zespół Szkół Technicznych nr. 3, Płock</h4>
           <p>Szkołę kończę w tym roku, w maju bieżącego roku zdaje egzamin maturalny oraz dostanę wynik drugiego egzaminu zawodowego który nada mi tytuł technika informatyki wtedy też mogę rozpocząć pracę. </p>
@@ -32,14 +33,19 @@ function App() {
   },
     {title:'Kursy',dc:      <Dc 
     content= {<>
+      <p className="date">~ 10.2021</p>
       <h3>OD PODSTAW DO FRONT-END DEVELOPERA</h3>
       <p>Front-end średnio zaawansowany</p>
+      <p className="date">~ 11.2021</p>
       <h3>OD PODSTAW DO FRONT-END DEVELOPERA</h3>
       <p>Podstawy programowania w JavaScript</p>
+      <p className="date">~ 12.2021</p>
       <h3>OD PODSTAW DO FRONT-END DEVELOPERA</h3>
       <p>React od podstaw - teoria i praktyka</p>
+      <p className="date">~ 02.2022</p>
       <h3>OD PODSTAW DO FRONT-END DEVELOPERA</h3>
       <p>Backend - Node.js, Express i MongoDB</p>
+      <p className="date">10.2022-12.2023</p>
       <h3>MegaK v3</h3>
       <p>Obszerny kurs głównie backend-owy(ale zawierający JavaScript oraz React) trwający 14 mieś</p>
       <br />

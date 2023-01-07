@@ -1,11 +1,6 @@
 import React from 'react'
 import '../Css/App.css'
 
-import school from '../Assets/school.png'
-import course from '../Assets/courses.png'
-import experience from '../Assets/experience.png'
-import activities from '../Assets/CityCoders.png'
-
 
 function SamplePage({title,dc,img}) {
   return (

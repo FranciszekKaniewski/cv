@@ -65,10 +65,10 @@ function NamePage() {
             </h5>
             <h5>&lt;Zainteresowania
                 <ul>
-                    <li>Opanowanie</li>
-                    <li>Chęć nauki</li>
-                    <li>Zdolność szybkiej nauki</li>
-                    <li>Zdolność adaptacji</li>
+                    <li>Jazda na rowerze</li>
+                    <li>Tworzenie gier</li>
+                    <li>Uprawianie sportu</li>
+                    <li>eSport</li>
                 </ul>
                 <span>/&gt;</span>
             </h5>
