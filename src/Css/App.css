@@ -173,7 +173,9 @@ h5{
 .scroll-bar>span{
     cursor: pointer;
     flex-basis: 100%;
-    height: 10px;
+    /* height: 10px; */
     line-height: 5vh;
     font-size: 40px;
+    transition: .4s;
+    transform-origin: center;
 }

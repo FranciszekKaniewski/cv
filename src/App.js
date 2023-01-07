@@ -48,7 +48,6 @@ function App() {
       <p className="date">10.2022-12.2023</p>
       <h3>MegaK v3</h3>
       <p>Obszerny kurs głównie backend-owy(ale zawierający JavaScript oraz React) trwający 14 mieś</p>
-      <br />
       <p>Poza kursami rozwijałem zdobyte umiejętności pisząc strony czy programy związane z danym tematem przez co poszerzałem swoją wiedzę o zagraniczne fora czy filmy.</p>
     </>}/>,
     img: course,
