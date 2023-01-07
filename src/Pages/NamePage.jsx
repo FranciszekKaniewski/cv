@@ -31,7 +31,7 @@ function NamePage() {
         ))
 
   return (
-    <div className='sample-page'>
+    <div className='name-page'>
 
         <div className="left">
 
@@ -43,12 +43,11 @@ function NamePage() {
             </ul>
         </div>
 
-        
+        <div className="contact">
         <h5><FontAwesomeIcon icon={faMailBulk} /> fkaniewski.web@gmail.com</h5>
         <h5><FontAwesomeIcon icon={faPhone} /> +48 604 947 826</h5>
         <h5><FontAwesomeIcon icon={faLocation} />Strzelecka 9, 9-400 Płock</h5>
-
-
+        </div>
 
         </div>
 

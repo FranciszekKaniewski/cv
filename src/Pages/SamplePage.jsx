@@ -6,8 +6,10 @@ function SamplePage({title,dc}) {
     <>
     <div className='sample-page'>
       <div className="left">
+        <div className="content">
         <h1>{title}</h1>
-        <h4>{dc}</h4>
+        {dc}
+        </div>
       </div>
       <div className="right">
         

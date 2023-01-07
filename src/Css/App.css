@@ -7,11 +7,10 @@ html,body{
 }
 h1{
     font-size: 3.5em;
-    margin-top: 10vh;
+    text-align: center;
 }
 h5{
     font-size: 1em;
-    margin-top: 10vh;
 }
 
 .App{
@@ -24,21 +23,22 @@ h5{
     transition: .4s
 }
 
-
-.sample-page>.left>.skills{
-    flex-basis: 100%;
+.name-page>.left>.skills{
     text-align: center;
     font-size: 1.2em;
-    margin-bottom: 40px;
 }
-.sample-page>.left>.skills>ul{
+.name-page>.left>.skills>ul{
     list-style-type: none;
 }
 .left{
-    margin-top: 50px;
+    display: flex;
+    height: 100%;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .left>h5{
-    margin: 20px 100px;
+    margin: 20px 20px;
 }
 .progres-bar{
     width: 50%;
@@ -63,7 +63,6 @@ h5{
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
-    margin-top: 50px;
 }
 .right>h5{
     position: absolute;
@@ -72,28 +71,40 @@ h5{
     background-color: #aaa;
     border-radius: 20px;
     padding: 20px;
-    top: 450px;
+    top: 470px;
     left: 5vw;
 }
 .right>h5:nth-child(2){
-    top: 670px;
+    top: 700px;
     left: auto;
     right: 5vw;
 }
 .right>.avatar{
     display: block;
-    /* width: 100%; */
-    margin-top: 0vh;
-    height: 900px;
-    margin: 0 100vw;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 900px;
 }
 .right>h5>ul{
     list-style-type: none;
     font-size: .8em;
 }
+.name-page>.right{
+    flex-direction: column;
+}
+.name-page>.left>.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10vw;
+}
+.name-page>.left>.contact>h5{
+    margin: 20px;
+}
 
 
-.sample-page{
+.sample-page,.name-page{
     flex-basis: 100%;
     width: 100vh;
     height: 10px;
@@ -104,24 +115,31 @@ h5{
 .sample-page:nth-child(even){
     flex-direction: row-reverse;
 }
-.sample-page>.left,.sample-page>.right{
+.sample-page>.left,.sample-page>.right,.name-page>.left,.name-page>.right{
     flex-basis: 100%;
-    height: 100%;
+    height: 100vh;
     width: 50%;
     float: left;
-}
-.sample-page>.left{
-    background-color: #5ee;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 .sample-page>.left>h1{
     width: 100%;
     text-align: center;
 }
-.sample-page>.right{
-    background-color: #a5a;
+
+
+.samplepage-desc{
+    text-align: center;
+    margin: 75px;
+    font-size: 1.35em;
+    font-weight: 100;
+}
+.content{
+}
+.name-page>h1{
+    flex-basis: 100%;
+}
+.left:nth-child(0){
+    flex-direction: row;
 }
 
 
