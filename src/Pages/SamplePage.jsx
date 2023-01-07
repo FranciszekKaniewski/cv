@@ -1,7 +1,13 @@
 import React from 'react'
 import '../Css/App.css'
 
-function SamplePage({title,dc}) {
+import school from '../Assets/school.png'
+import course from '../Assets/courses.png'
+import experience from '../Assets/experience.png'
+import activities from '../Assets/CityCoders.png'
+
+
+function SamplePage({title,dc,img}) {
   return (
     <>
     <div className='sample-page'>
@@ -12,7 +18,7 @@ function SamplePage({title,dc}) {
         </div>
       </div>
       <div className="right">
-        
+        <img className='school-png' src={img} alt="" />
       </div>
 
     </div>

@@ -63,6 +63,7 @@ h5{
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: relative;
+    flex-direction: column;
 }
 .right>h5{
     position: absolute;
@@ -140,6 +141,12 @@ h5{
 }
 .left:nth-child(0){
     flex-direction: row;
+}
+
+
+.school-png{
+    width: 100%;
+    /* max-height: 900px; */
 }
 
 
