@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 
+import PDF from '../Assets/FranciszekKaniewskiCV.pdf'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMailBulk, faThList, faComputer, faLeftLong } from '@fortawesome/free-solid-svg-icons'
 
@@ -27,9 +29,9 @@ function FinPage({setEnd,animationStart}) {
             zapraszam do kontaktu
         </h1>
         <div className="btns">
-            <button>fkaniewski.web@gmail.com <FontAwesomeIcon icon={faMailBulk} /></button>
-            <button>GitHub <FontAwesomeIcon icon={faComputer} /></button>
-            <button>Pobierz CV <FontAwesomeIcon icon={faThList} /></button>
+            <a rel="noopener noreferrer" target='_blank' href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=VpCqJQvtSCRvSgsjbzvGhfgQwnQTQQDgSDzXxStQJTDRFhkWgBdsJPTlrgXjlVkmfSRDGgg"><button className='mail'>fkaniewski.web@gmail.com <FontAwesomeIcon icon={faMailBulk} /></button></a>
+            <a href="https://github.com/FranciszekKaniewski/cv" target="_blank" rel="noopener noreferrer"><button className='git'>GitHub <FontAwesomeIcon icon={faComputer} /></button></a>
+            <a href={PDF} target="_blank" rel="noopener noreferrer"><button className='cv-btn'>Pobierz CV <FontAwesomeIcon icon={faThList} /></button></a>
         </div>
         <p>Do zobaczenia, Franciszek Kaniewski 😉</p>
     </div>

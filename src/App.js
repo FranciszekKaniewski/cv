@@ -38,19 +38,19 @@ function App() {
     content= {<>
       <p className="date">~ 10.2021</p>
       <h3>OD PODSTAW DO FRONT-END DEVELOPERA</h3>
-      <p>Front-end średnio zaawansowany</p>
+      <a href="https://websamuraj.pl/kurs/front-end-zaawansowany-w-15-dni-kurs-online/" target="_blank" rel="noopener noreferrer"><p>Front-end średnio zaawansowany</p></a>
       <p className="date">~ 11.2021</p>
       <h3>OD PODSTAW DO FRONT-END DEVELOPERA</h3>
-      <p>Podstawy programowania w JavaScript</p>
+      <a href="https://websamuraj.pl/kurs/programowanie-w-javascript/" target="_blank" rel="noopener noreferrer"><p>Podstawy programowania w JavaScript</p></a>
       <p className="date">~ 12.2021</p>
       <h3>OD PODSTAW DO FRONT-END DEVELOPERA</h3>
-      <p>React od podstaw - teoria i praktyka</p>
+      <a href="https://www.udemy.com/course/kurs-react-od-podstaw/?couponCode=REACT-49" target="_blank" rel="noopener noreferrer"><p>React od podstaw - teoria i praktyka</p></a>
       <p className="date">~ 02.2022</p>
       <h3>OD PODSTAW DO FRONT-END DEVELOPERA</h3>
-      <p>Backend - Node.js, Express i MongoDB</p>
+      <a href="https://www.udemy.com/course/kurs-nodejs-express-mongodb/?couponCode=NODE-49" target="_blank" rel="noopener noreferrer"><p>Backend - Node.js, Express i MongoDB</p></a>
       <p className="date">10.2022-12.2023</p>
       <h3>MegaK v3</h3>
-      <p>Obszerny kurs głównie backend-owy(ale zawierający JavaScript oraz React) trwający 14 mieś</p>
+      <a href="https://www.megak.pl/" target="_blank" rel="noopener noreferrer"><p>Obszerny kurs głównie backend-owy(ale zawierający JavaScript oraz React) trwający 14 mieś</p></a>
       <p>Poza kursami rozwijałem zdobyte umiejętności pisząc strony czy programy związane z danym tematem przez co poszerzałem swoją wiedzę o zagraniczne fora czy filmy.</p>
     </>}/>,
     img: course,
@@ -59,8 +59,8 @@ function App() {
       <h3>Freelancer</h3>
       <p>Tworzyłem stronę internetową "po znajomości" 
         <br/> <br />
-        w czystym html/css/js - primavet.pl <br /> <br />
-        jak i w WordPress - ePrimavet.pl <br /><br />
+        w czystym html/css/js - <a href="http://" target="_blank" rel="noopener noreferrer">primavet.pl</a> <br /> <br />
+        jak i w WordPress - <a href="http://" target="_blank" rel="noopener noreferrer">ePrimavet.pl</a> <br /><br />
         Strony były tworzone na wczesnym etapie mojej nauki i sam widzę w nich masę błędów na obecny moment.</p>
     </>}/>,
     img: experience,},
