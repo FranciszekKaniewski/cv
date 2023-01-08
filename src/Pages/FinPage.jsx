@@ -34,6 +34,9 @@ function FinPage({setEnd,animationStart}) {
             <a href={PDF} target="_blank" rel="noopener noreferrer"><button className='cv-btn'>Pobierz CV <FontAwesomeIcon icon={faThList} /></button></a>
         </div>
         <p>Do zobaczenia, Franciszek Kaniewski 😉</p>
+        <p className="data">Wyrażam zgodę na przetwarzanie moich danych osobowych w zakresie obecnych oraz przyszłych procesów
+        rekrutacyjnych
+        </p>
     </div>
   )
 }
