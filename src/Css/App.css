@@ -11,7 +11,6 @@ html,body{
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: Arial, sans-serif;
-    
 }
 h1{
     color: var(--main);
@@ -41,8 +40,12 @@ p{
     width: calc(5*100vw);
     margin: 0;
     right: 0;
-    transition: .4s
+    transition: .4s;
 }
+@keyframes toTop {
+    from {margin-bottom: 0;}
+    to {margin-top: -100vh;}
+  }
 
 .sample-page,.name-page{
     flex-basis: 100%;
@@ -84,7 +87,9 @@ p{
 
 /* ==========NamePage========== */
 
-
+.name-page>.left>h1{
+    margin-top: 5vh;
+}
 .name-page>.right>.avatar{
     display: block;
     margin: 0 auto;
@@ -189,4 +194,91 @@ p{
     font-size: 40px;
     transition: .4s;
     transform-origin: center;
+}
+
+
+/* ==========FinPage========== */
+
+.fin-page{
+    position: relative;
+    width: 100vw;
+    background-color: #ddc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    animation: none;
+}
+
+@keyframes moveToRight {
+    0%{translate: 0 0;}
+    100%{translate: 100% 0;}
+}
+
+.fin-page>.btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.fin-page>.btns>button{
+    cursor: pointer;
+    height: 80px;
+    width: 400px;
+    border-radius: 100px;
+    margin: 40px 40%;
+    transition: .4s;
+    color: var(--white);
+    font-size: 1em;
+    border: none;
+}
+.fin-page>.btns>button:nth-child(1){
+    background-color: #434981;
+}
+.fin-page>.btns>button:nth-child(2){
+    background-color: #434343;
+}
+.fin-page>.btns>button:nth-child(3){
+    background-color: #814349;
+}
+.fin-page>.btns>button:hover{
+    translate: 0 -20px;
+    box-shadow: #2c2c2c 2px 10px 2px;
+}
+.fin-page>p{
+    font-size: 1.4em;
+    text-align: center;
+    margin: 0 20px;
+}
+.fin-page>.back{
+    position: fixed;
+    top: 5%;
+    left: 0;
+    right: 95%;
+    height: 75px;
+    background-color: #814349;
+    transition: .4s;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    animation: 1.1s ease showBtn;
+}
+.fin-page>.back:hover{
+    right: 90%;
+}
+.fin-page>.back>svg{
+    position: absolute;
+    right: 0;
+    height: 50%;
+    margin: calc(75px/4) 20px;
+    color: var(--white);
+    animation: 1.1s ease showArrow;
+}
+
+@keyframes showBtn {
+    0%{background-color: rgba(0,0,0,0);}
+    50%{background-color: rgba(0,0,0,0);}
+    100%{background-color: #814349;}
+}
+@keyframes showArrow {
+    0%{color: rgba(0,0,0,0);}
+    50%{color: rgba(0,0,0,0);}
+    100%{color: #fff;}
 }

@@ -1,5 +1,6 @@
 import './Css/App.css';
 import SamplePage from './Pages/SamplePage.jsx';
+import FinPage from './Pages/FinPage';
 import ScrollBar from './Coponents/ScrollBar';
 import Dc from './Coponents/Dc';
 
@@ -15,6 +16,8 @@ import activities from './Assets/CityCoders.png'
 function App() {
   
   const [procent, setProcent] = useState(0)
+  const [end, setEnd] = useState(false)
+  const [animationStart, setanimationStart] = useState('')
 
   const SamplePagesInfo = [
     {title:'Wykształcenie',
@@ -78,12 +81,14 @@ function App() {
   ))
 
   return (
-    <div className="App" style={{right: `${procent}%`}}>
+    <div className="App" style={{right: `${procent}%`, animation:animationStart }}>
 
-      <NamePage />
-      {SamplePages}
+      {!end?<NamePage />:null}
+      {!end?SamplePages:null}
 
-      <ScrollBar procent={procent} setProcent={setProcent}/>
+      {!end?<ScrollBar procent={procent} setProcent={setProcent} setEnd={setEnd} animationStart={setanimationStart}/>:null}
+
+      {end?<FinPage setEnd={setEnd} animationStart={setanimationStart}/>:null}
 
     </div>
   );

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faSchool, faComputer, faHandshakeAlt, faUsers, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 
-function ScrollBar({procent, setProcent}) {
+function ScrollBar({procent, setProcent,setEnd,animationStart}) {
 
   let buttonStyle={color:'var(--main)'}
 
@@ -12,8 +12,19 @@ function ScrollBar({procent, setProcent}) {
     if(procent > 0) setProcent(procent - 100)
   }
   
-  const moveRight =(e)=>{
-    if(procent < 400) setProcent(procent + 100)
+  const moveRight =()=>{
+    if(procent < 400) {
+      setProcent(procent + 100)
+    }else{
+      function end(){
+        setEnd(true)
+        setProcent(0)
+        animationStart('');
+      }
+      animationStart('.6s alternate toTop');
+      setTimeout(end,500)
+    }
+    
   }
 
   const moveTo =(position)=>{
