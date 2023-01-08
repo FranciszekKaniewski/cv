@@ -289,6 +289,15 @@ a{
     100%{color: #fff;}
 }
 
+.fin-page>.data{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
 /* MediaQueris */
 
 @media (max-width: 1250px) {
